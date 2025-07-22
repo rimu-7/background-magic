@@ -1,69 +1,69 @@
-# React + TypeScript + Vite
+# Background Magic
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Background Magic is a modern, open-source web app for generating, previewing, and customizing beautiful backgrounds, patterns, and textures for your creative projects. Built with React and Vite, it offers a fast, interactive experience for designers, developers, and anyone who loves visual creativity.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Live Preview:** Instantly see your background changes in real time.
+- **Pattern & Texture Library:** Browse and select from a curated set of patterns and textures.
+- **Customizable Themes:** Switch between light and dark modes, or create your own theme.
+- **One-Click Export:** Download backgrounds for use in your apps, websites, or presentations.
+- **Responsive Design:** Works beautifully on desktop and mobile devices.
+- **Easy Integration:** Copy CSS or image assets directly for use in your projects.
 
-## Expanding the ESLint configuration
+## 📦 Project Structure
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```
+src/
+  components/
+    backgrounds/   # Background cards, grids, selectors
+    patterns/      # Pattern cards, grids, selectors
+    textures/      # Texture cards, selectors
+    ui/            # Buttons, theme toggles, tooltips
+  lib/             # Utility functions
+  pages/           # Home, About, and other pages
+  assets/          # Static images and SVGs
+public/            # Public assets
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🛠️ Getting Started
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+1. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+2. **Run locally:**
+   ```bash
+   npm run dev
+   ```
+3. **Build for production:**
+   ```bash
+   npm run build
+   ```
+4. **Preview production build:**
+   ```bash
+   npm run preview
+   ```
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🌐 Deployment
+
+Deploy instantly to Vercel. The included `vercel.json` ensures proper routing for your SPA.
+
+## ✨ Example Use Cases
+
+- Create stunning hero backgrounds for landing pages
+- Generate unique textures for UI components
+- Prototype design ideas with live previews
+- Export assets for presentations or social media
+
+## 📋 Contributing
+
+Contributions are welcome! Feel free to open issues, suggest features, or submit pull requests.
+
+## 📄 License
+
+MIT License. See LICENSE for details.
+
+---
+
+Made with ❤️ using React, Vite, and a passion for beautiful design.
