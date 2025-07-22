@@ -1,0 +1,25 @@
+import type { BaseBackground } from "./BackgroundGrid";
+
+export const backgrounds: BaseBackground[] = [
+  { type: "color", id: "sky", name: "Sky", color: "#0ea5e9" },
+  { type: "color", id: "emerald", name: "Emerald", color: "#10b981" },
+  { type: "color", id: "amber", name: "Amber", color: "#f59e0b" },
+  { type: "color", id: "rose", name: "Rose", color: "#f43f5e" },
+  { type: "color", id: "indigo", name: "Indigo", color: "#6366f1" },
+  { type: "color", id: "violet", name: "Violet", color: "#7c3aed" },
+  { type: "color", id: "fuchsia", name: "Fuchsia", color: "#d946ef" },
+  { type: "color", id: "teal", name: "Teal", color: "#14b8a6" },
+  { type: "color", id: "slate", name: "Slate", color: "#64748b" },
+  { type: "color", id: "stone", name: "Stone", color: "#78716c" },
+  { type: "color", id: "cobalt", name: "Cobalt", color: "#2563eb" },
+  { type: "color", id: "jade", name: "Jade", color: "#15803d" },
+  { type: "color", id: "ruby", name: "Ruby", color: "#dc2626" },
+  { type: "color", id: "sapphire", name: "Sapphire", color: "#0ea5e9" },
+  { type: "color", id: "plum", name: "Plum", color: "#a855f7" },
+  { type: "color", id: "charcoal", name: "Charcoal", color: "#374151" },
+  { type: "color", id: "mint", name: "Mint", color: "#34d399" },
+  { type: "color", id: "coral", name: "Coral", color: "#fb7185" },
+  { type: "color", id: "lavender", name: "Lavender", color: "#c084fc" },
+  { type: "color", id: "gold", name: "Gold", color: "#fbbf24" },
+  { type: "color", id: "gray", name: "Gray", color: "#9ca3af" },
+];
