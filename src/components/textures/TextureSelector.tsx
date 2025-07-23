@@ -1,5 +1,5 @@
 // components/textures/TextureSelector.tsx
-import React, { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
 import type { Texture } from "./types";
 import { useTheme } from "../ui/ThemeProvider";
 import { TextureCard } from "./TextureCard";

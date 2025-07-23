@@ -1,6 +1,6 @@
 import React from "react";
 import { Copy, Check } from "lucide-react";
-import type { BaseBackground } from "./types";
+import type { BaseBackground } from "../backgrounds/BackgroundGrid";
 
 interface PatternGridProps {
   patterns: BaseBackground[];
@@ -22,7 +22,10 @@ export const PatternGrid: React.FC<PatternGridProps> = ({
             key={pattern.id}
             className="rounded-2xl shadow overflow-hidden cursor-pointer border border-gray-300 relative group"
             style={{
-              background: `${pattern.pattern}, ${pattern.color}`,
+              background:
+                "pattern" in pattern && pattern.pattern
+                  ? `${pattern.pattern}, ${pattern.color}`
+                  : pattern.color,
               backgroundSize: "cover",
               backgroundRepeat: "repeat",
               backgroundAttachment: "fixed",

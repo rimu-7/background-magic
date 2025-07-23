@@ -1,11 +1,12 @@
 // components/backgrounds/BackgroundSelector.tsx
-import React, { useState } from "react";
-import { Tabs, TabsList, TabsTrigger, TabsContent } from "../ui/Tabs";
+import { useState } from "react";
+import { Tabs, TabsList, TabsTrigger, TabsContent } from "../ui/tabs"; // Updated import path
 import { PatternSelector } from "../patterns/PatternSelector";
 import { TextureSelector } from "../textures/TextureSelector";
 
 export const BackgroundSelector = () => {
   const [activeTab, setActiveTab] = useState("patterns");
+  console.log("Active tab:", activeTab);
 
   return (
     <div className="w-full">

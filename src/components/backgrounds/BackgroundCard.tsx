@@ -17,9 +17,7 @@ interface Props {
 export const BackgroundCard: React.FC<Props> = ({
   id,
   name,
-  color,
   gradient,
-  textColor,
   isSelected,
   copiedId,
   onSelect,

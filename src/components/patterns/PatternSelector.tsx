@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
 import type { Pattern } from "./types";
 import { useTheme } from "../ui/ThemeProvider";
 import { PatternCard } from "./PatternCard";

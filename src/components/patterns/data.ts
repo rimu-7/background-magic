@@ -1,4 +1,4 @@
-import type { BaseBackground } from "./types";
+import type { BaseBackground } from "../backgrounds/BackgroundGrid";
 
 export const patterns: BaseBackground[] = [
   {

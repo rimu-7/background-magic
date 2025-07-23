@@ -1,5 +1,4 @@
 // components/patterns/PatternDisplay.tsx
-import React from 'react';
 import type { Pattern } from './types';
 
 interface PatternDisplayProps {

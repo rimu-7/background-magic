@@ -10,7 +10,7 @@ export const useBackgroundTheme = () => {
       window.matchMedia("(prefers-color-scheme: dark)").matches
         ? "dark"
         : "light";
-    return theme === "system" ? systemTheme : theme;
+    return (theme as string) === "system" ? systemTheme : theme;
   }, [theme]);
 
   const getGradient = (endColor: string) => {
