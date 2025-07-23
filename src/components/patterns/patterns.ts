@@ -120,6 +120,32 @@ backgroundSize: '20px 20px'`,
     lightStyle: `backgroundImage: 'radial-gradient(#00000022 3px, transparent 4px)', backgroundSize: '40px 40px'`,
     darkStyle: `backgroundImage: 'radial-gradient(#ffffff22 3px, transparent 4px)', backgroundSize: '40px 40px'`,
   },
+  {
+    id: "red-big-dots",
+    name: "Custom Gradient Background",
+    lightClasses:
+      "bg-white bg-[linear-gradient(to_right,rgba(71,85,105,0.15)_1px,transparent_1px),linear-gradient(to_bottom,rgba(71,85,105,0.15)_1px,transparent_1px),radial-gradient(circle_at_50%_60%,rgba(236,72,153,0.15)_0%,rgba(168,85,247,0.05)_40%,transparent_70%)] [background-size:40px_40px]",
+    darkClasses:
+      "bg-black bg-[linear-gradient(to_right,rgba(71,85,105,0.15)_1px,transparent_1px),linear-gradient(to_bottom,rgba(71,85,105,0.15)_1px,transparent_1px),radial-gradient(circle_at_50%_60%,rgba(236,72,153,0.15)_0%,rgba(168,85,247,0.05)_40%,transparent_70%)] [background-size:40px_40px]",
+    lightStyle:
+      "backgroundImage: 'linear-gradient(to right, rgba(71, 85, 105, 0.15) 1px, transparent 1px), linear-gradient(to bottom, rgba(71, 85, 105, 0.15) 1px, transparent 1px), radial-gradient(circle at 50% 60%, rgba(236, 72, 153, 0.15) 0%, rgba(168, 85, 247, 0.05) 40%, transparent 70%)', backgroundSize: '40px 40px'",
+    darkStyle:
+      "backgroundImage: 'linear-gradient(to right, rgba(71, 85, 105, 0.15) 1px, transparent 1px), linear-gradient(to bottom, rgba(71, 85, 105, 0.15) 1px, transparent 1px), radial-gradient(circle at 50% 60%, rgba(236, 72, 153, 0.15) 0%, rgba(168, 85, 247, 0.05) 40%, transparent 70%)', backgroundSize: '40px 40px'",
+  },
+  {
+    id: "waves-pattern",
+    name: "Waves Pattern",
+    lightClasses:
+      "bg-white bg-[linear-gradient(to_bottom,rgba(0,123,255,0.1)_1px,transparent_1px)] [background-size:100%_20px]",
+    darkClasses:
+      "bg-black bg-[linear-gradient(to_bottom,rgba(255,255,255,0.1)_1px,transparent_1px)] [background-size:100%_20px]",
+    lightStyle:
+      "backgroundImage: 'linear-gradient(to bottom, rgba(0, 123, 255, 0.1) 1px, transparent 1px)', backgroundSize: '100% 20px'",
+    darkStyle:
+      "backgroundImage: 'linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 1px, transparent 1px)', backgroundSize: '100% 20px'",
+  },
+  
+  
 
   // Add more up to 50 total...
 ];

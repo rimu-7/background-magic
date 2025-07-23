@@ -22,4 +22,7 @@ export const backgrounds: BaseBackground[] = [
   { type: "color", id: "lavender", name: "Lavender", color: "#c084fc" },
   { type: "color", id: "gold", name: "Gold", color: "#fbbf24" },
   { type: "color", id: "gray", name: "Gray", color: "#9ca3af" },
+  { type: "color", id: "black", name: "Black", color: "#000000" },
+  { type: "color", id: "white", name: "White", color: "#ffffff" },
+  { type: "color", id: "sunset", name: "Sunset", color: "#ff5e4d" },
 ];
