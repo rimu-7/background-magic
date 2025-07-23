@@ -6,6 +6,7 @@ import { useBackgroundTheme } from "@/components/backgrounds/useBackgroundTheme"
 import { useState, useCallback } from "react";
 import DemoPage from "@/components/DemoPage";
 import { backgrounds } from "./backgrounds";
+import { toast } from "react-toastify";
 
 const BG_STORAGE_KEY = "custom-bg-id";
 
@@ -66,6 +67,7 @@ export default function GradientSelector() {
         await navigator.clipboard.writeText(code);
         setCopiedId(bg.id);
         setTimeout(() => setCopiedId(null), 1500);
+        toast.success("Copied");
       } catch (e) {
         console.error("Copy failed", e);
       }

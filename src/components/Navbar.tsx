@@ -10,8 +10,10 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 
+
 const navLinks = [
   { path: "/", label: "Home" },
+  { path: "/docs", label: "Docs" },
   { path: "/gradients", label: "Gradients" },
   { path: "/patterns", label: "Patterns" },
   { path: "/textures", label: "Textures" },
@@ -50,7 +52,7 @@ const Navbar = () => {
   return (
     <nav
       className={cn(
-        "fixed top-0 left-0 w-full z-50 backdrop-blur-xs transition-transform duration-300",
+        "fixed top-0 left-0 w-full z-50 bg-white/30 backdrop-blur-3xl transition-transform duration-300",
         visible ? "translate-y-0" : "-translate-y-full"
       )}
       role="navigation"
@@ -75,10 +77,10 @@ const Navbar = () => {
                 <Link
                   to={path}
                   className={cn(
-                    "transition hover:text-primary ",
+                    "transition  ",
                     isActive &&
-                      "text-primary border-b-3 border-primary  font-semibold",
-                    !isActive && "text-muted-foreground"
+                      " border-b-3 border-primary  font-semibold",
+                    !isActive && " hover:text-muted-foreground dark:hover:text-muted-foreground"
                   )}
                   aria-current={isActive ? "page" : undefined}
                 >
@@ -102,7 +104,7 @@ const Navbar = () => {
                 size="icon"
                 variant="ghost"
                 asChild
-                className="hover:text-primary focus:outline-none focus:ring-2 focus:ring-primary rounded"
+                className=" focus:outline-none focus:ring-2 focus:ring-primary rounded-md"
               >
                 <a
                   href="https://github.com/rimu-7"
@@ -126,7 +128,7 @@ const Navbar = () => {
                 size="icon"
                 variant="ghost"
                 asChild
-                className="hover:text-primary focus:outline-none focus:ring-2 focus:ring-primary rounded"
+                className=" focus:outline-none focus:ring-2 focus:ring-primary rounded-md"
               >
                 <a
                   href="https://www.linkedin.com/in/mutasim-fuad-rimu-36a4a8260/"
@@ -181,8 +183,8 @@ const Navbar = () => {
                 <Link
                   to={path}
                   className={cn(
-                    "block w-full transition hover:text-primary focus:outline-none focus:ring-2 focus:ring-primary rounded py-1",
-                    isActive && "text-primary font-semibold"
+                    "block w-full transition  focus:outline-none focus:ring-2 focus:ring-primary rounded py-1",
+                    isActive && " font-semibold"
                   )}
                   aria-current={isActive ? "page" : undefined}
                   onClick={() => setMobileMenuOpen(false)}
@@ -198,7 +200,7 @@ const Navbar = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHub"
-              className="flex items-center gap-2 hover:text-primary transition"
+              className="flex items-center gap-2  transition"
             >
               <Github className="h-5 w-5" />
               GitHub
@@ -208,7 +210,7 @@ const Navbar = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
-              className="flex items-center gap-2 hover:text-primary transition"
+              className="flex items-center gap-2  transition"
             >
               <Linkedin className="h-5 w-5" />
               LinkedIn
