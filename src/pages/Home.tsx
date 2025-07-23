@@ -6,7 +6,6 @@ import {
 import {
   ArrowRight,
   BookText,
-  Code,
   Copy,
   Eye,
   Flower,
