@@ -7,6 +7,7 @@ import { TextureSelector } from "./components/textures/TextureSelector";
 import GradientSelector from "./components/backgrounds/BackgroundSelector";
 import DocsPage from "./pages/DocsPage";
 import { ToastContainer, Zoom } from "react-toastify";
+import GradientSelector2 from "./components/gradients/GradientSelector";
 
 function App() {
   return (
@@ -27,11 +28,12 @@ function App() {
       <Navbar />
 
       <Routes>
-        <Route path="/gradients" element={<GradientSelector />} />
+        <Route path="/shades" element={<GradientSelector />} />
         <Route path="/" element={<Home />} />
         <Route path="/docs" element={<DocsPage />} />
         <Route path="/patterns" element={<PatternSelector />} />
         <Route path="/textures" element={<TextureSelector />} />
+        <Route path="/gradients" element={<GradientSelector2 />} />
       </Routes>
       <Footer />
     </>

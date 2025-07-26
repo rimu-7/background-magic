@@ -15,7 +15,7 @@ const Footer = () => {
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
         <div className="flex flex-col md:flex-row justify-between items-center gap-2 md:gap-0">
-          <span className="text-xs sm:text-sm text-gray-100 dark:text-gray-400 text-center md:text-left">
+          <span className="text-xs sm:text-sm text-gray-900 dark:text-gray-400 text-center md:text-left">
             © {new Date().getFullYear()} Background Magic. All rights reserved
             rimu-7
           </span>
@@ -24,7 +24,7 @@ const Footer = () => {
             <TooltipTrigger>
               {" "}
               <a
-                href="https://www.github.com/rimu-7/magic-background"
+                href="https://github.com/rimu-7/background-magic"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-xs sm:text-sm text-blue-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"

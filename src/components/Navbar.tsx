@@ -15,6 +15,7 @@ const navLinks = [
   { path: "/", label: "Home" },
   { path: "/docs", label: "Docs" },
   { path: "/gradients", label: "Gradients" },
+  { path: "/shades", label: "Shade" },
   { path: "/patterns", label: "Patterns" },
   { path: "/textures", label: "Textures" },
 ];
